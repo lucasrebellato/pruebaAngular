@@ -11,7 +11,6 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ErrorComponent } from './components/error/error.component';
-import { ProductBoxComponent } from './components/product-box/product-box.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { ProductBoxComponent } from './components/product-box/product-box.compon
     AboutComponent,
     ContactComponent,
     ProductsComponent,
-    ErrorComponent,
-    ProductBoxComponent
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
