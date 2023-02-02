@@ -1,0 +1,40 @@
+<main id="contact">
+
+
+    <section>
+
+        <h1>¡Contactanos!</h1>
+
+        <div id="in-contact">
+
+            <article>
+               <p>Puedes contactarnos a este numero o enviarnos un mensaje el cual será respondido al correo asociado a tu cuenta </p>    
+            </article>
+    
+            <form action="">
+             
+                <input type="text" name="name" id="name" placeholder="Nombre">
+                <p id="nameError" class="error hidden">Verifique su nombre</p>
+                
+                <input type="text" name="lastname" id="lastname" placeholder="Apellido">
+                <p id="lastnameError" class="error hidden">Verifique su apellido</p>
+                
+                <input type="text" name="email" id="email" placeholder="Correo electronico"> 
+                <p id="emailError" class="error hidden">Verifique su email</p>
+                
+                <textarea name="comment" id="contact-comment" cols="30" rows="10" placeholder="Introduce tu comentario..."></textarea>
+                
+                <button type="button" onclick="validateContact()">Enviar</button>
+                 
+                <p id="sendCorrect" class="correct hidden">Mensaje enviado correctamente</p> 
+           
+            </form>
+        
+            
+        </div>
+        
+    </section>
+
+    
+
+</main>

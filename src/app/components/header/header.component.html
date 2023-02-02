@@ -1,0 +1,30 @@
+<header>
+        
+    <div class="brand">
+
+       
+
+        <img src="../images/loguin.png" alt="">
+
+        
+
+        <h1 class="title">Origen Eco-Almacen</h1>
+
+    
+    </div>
+    
+    <button class="fa fa-bars"></button>
+    
+    <nav>
+
+        <ul class="nav_1 nav_menu">
+            <li (click)="onChange('index')" [ngClass]="{'active': activePage=='index'}"><a>Inicio</a></li>
+            <li (click)="onChange('products')" [ngClass]="{'active': activePage=='products'}"><a >Productos</a></li>
+            <li (click)="onChange('ubication')" [ngClass]="{'active': activePage=='ubication'}"><a>Ubicación</a></li> 
+            <li (click)="onChange('contact')" [ngClass]="{'active': activePage=='contact'}"><a>Contacto</a></li>
+            <li (click)="onChange('about')" [ngClass]="{'active': activePage=='about'}"><a>Nosotros</a></li>
+        </ul>
+
+    </nav>
+
+</header>
