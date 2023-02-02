@@ -1,33 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     width: 100%;
     text-decoration: none;
     color: white;
 }
 
-body{
+body {
     background-color: tomato;
 }
 
-h1{
+h1 {
     margin: 20px 0px 20px 0px;
     font-size: 30px;
 }
 
-p{
+p {
     padding: 0px 20px 0px 20px;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
 /* PRE HEADER */
 
-.pre-header{
+.pre-header {
     border-bottom: 2px solid tomato;
     height: 5vh;
     background-color: #302f2f;
@@ -38,15 +38,15 @@ p{
     padding-right: 10px;
 }
 
-.log{
+.log {
     grid-column: 3;
     text-align: end;
-    
+
 }
 
 /* HEADER */
 
-header{
+header {
     border-bottom: 2px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -56,34 +56,34 @@ header{
 
 }
 
-.active{
+.active {
     background-color: tomato;
 }
 
-header img{
+header img {
     width: 80px;
     margin: 10px 0px 0px 20px;
 }
 
-header button{
+header button {
     grid-column: 3;
-    background-color:#302f2f;
+    background-color: #302f2f;
     color: white;
     font-size: 90px;
     width: 50px;
     height: 50px;
     margin-top: 30px;
     margin-left: 50px;
-   
+
 }
 
 
-header h1{
+header h1 {
     display: none;
 }
 
 
-header a{
+header a {
     text-align: center;
 }
 
@@ -95,66 +95,67 @@ header a{
     background-color: #302f2f;
     position: fixed;
     top: 10.5vh;
-    width:100%;
+    width: 100%;
     height: (100% -60px);
     left: 0%;
     transition: left 0.5s;
     z-index: 10;
     position: absolute;
-  }
+}
 
-.nav_menu{
-   display: none;
- }
-  
-header li{
-   text-decoration: none;
-   line-height: 80px;
-   list-style-type: none;
-   border-bottom: 1px solid white;
-   display: flex;
- }
+.nav_menu {
+    display: none;
+}
 
- /* FOOTER */
+header li {
+    text-decoration: none;
+    line-height: 80px;
+    list-style-type: none;
+    border-bottom: 1px solid white;
+    display: flex;
 
-footer{
+}
+
+/* FOOTER */
+
+footer {
     height: 10vh;
-    background-color:#302f2f;
+    background-color: #302f2f;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-top: solid 2px tomato;
 }
 
-footer p{
+footer p {
     text-align: center;
     display: none;
 }
 
-.social-networks{
+.social-networks {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-right: 1rem;
 }
 
-.social-networks a{
+.social-networks a {
     width: 20px;
     margin-left: 10px;
     font-size: 1rem;
 }
 
-footer a{
+footer a {
     text-align: center;
 }
 
-.fa{
+.fa {
     font-size: 30px;
 }
-      
- /* PESTAÑA INICIO */
 
-#inicio{
+/* PESTAÑA INICIO */
+
+#inicio {
     position: relative;
     height: 100vh;
     overflow: hidden;
@@ -163,7 +164,7 @@ footer a{
     background-size: cover;
 }
 
-#inicio article{
+#inicio article {
     position: absolute;
     top: 0;
     background: rgba(0, 0, 0, 0.5);
@@ -172,7 +173,7 @@ footer a{
     padding: 15px;
 }
 
-#inicio h1{
+#inicio h1 {
     text-align: center;
 }
 
@@ -188,16 +189,16 @@ footer a{
     background-size: cover;
 }
 
-#ubication #pc{
+#ubication #pc {
     display: none;
 }
 
-#ubication #phone{
+#ubication #phone {
     width: 100%;
     height: 100%;
 }
 
-#ubication article{
+#ubication article {
     position: absolute;
     top: 0;
     background: rgba(0, 0, 0, 0.5);
@@ -205,25 +206,25 @@ footer a{
     height: 100%;
     padding: 15px;
     display: grid;
-    grid-template-rows: repeat(1fr,3);
+    grid-template-rows: repeat(1fr, 3);
     gap: 5px;
 }
 
-#ubication h1{
+#ubication h1 {
     text-align: center;
 }
 
-#cel-map{
+#cel-map {
     display: block;
 }
 
-#pc-map{
+#pc-map {
     display: none;
 }
 
 /* PESTAÑA CONTACTO */
 
-#contact{
+#contact {
     position: relative;
     height: 100vh;
     overflow: hidden;
@@ -232,7 +233,7 @@ footer a{
     background-size: cover;
 }
 
-#contact section{
+#contact section {
     position: absolute;
     height: 100%;
     padding: 10px;
@@ -240,22 +241,22 @@ footer a{
     background: rgba(0, 0, 0, 0.5);
 }
 
-#contact h1{
+#contact h1 {
     text-align: center;
 }
 
-#contact input{
+#contact input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    color: black!important;
+    color: black !important;
 }
 
-#contact textarea{
-    color: black!important;
+#contact textarea {
+    color: black !important;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -264,12 +265,12 @@ footer a{
     box-sizing: border-box;
 }
 
-#in-contact{
+#in-contact {
     display: grid;
     gap: 70px;
 }
 
-#contact button{
+#contact button {
     background-color: tomato;
     color: white;
     padding: 14px 20px;
@@ -279,21 +280,21 @@ footer a{
     width: 100%;
 }
 
-#contact button:hover{
+#contact button:hover {
     background-color: black;
 }
 
-.error{
+.error {
     color: red;
 }
 
-#contact form{
+#contact form {
     margin: 5px;
 }
 
 /* PESTAÑA NOSOTROS */
 
-#about{
+#about {
     position: relative;
     height: 100vh;
     overflow: hidden;
@@ -302,7 +303,7 @@ footer a{
     background-size: cover;
 }
 
-#about article{
+#about article {
     position: absolute;
     height: 100%;
     padding: 10px;
@@ -310,39 +311,38 @@ footer a{
     background: rgba(0, 0, 0, 0.5);
 }
 
-#about h1{
+#about h1 {
     text-align: center;
 }
 
-#about img{
+#about img {
     margin-top: 20px;
 }
 
-.info-pc{
+.info-pc {
     display: none;
 }
 
 /* TIENDA */
 
-#shop{
-    padding:20px 0px 20px 0px;
+#shop {
+    padding: 20px 0px 20px 0px;
     background-image: url(../images/fondo-black.jpg);
     min-height: 100vh;
 }
 
-#shop h1{
+#shop h1 {
     text-align: center;
 }
 
-#coffee-holder{
+#coffee-holder {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
-    
 }
 
-.product-conteiner{
+.product-conteiner {
     margin: 15;
     width: 150px;
     padding: 5px;
@@ -351,12 +351,13 @@ footer a{
     min-height: 250px;
 }
 
-.product-conteiner h3{
-    color: black!important;
+.product-conteiner h3 {
+    color: black !important;
+    text-align: center;
 }
 
-.product-conteiner button{
-    background-color: #302f2f; 
+.product-conteiner button {
+    background-color: #302f2f;
     border: none;
     padding: 15px 32px;
     text-align: center;
@@ -366,127 +367,128 @@ footer a{
     border-radius: 15px;
 }
 
-.product-conteiner button:hover{
+.product-conteiner button:hover {
     background-color: black;
 }
 
-.product-conteiner:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+.product-conteiner:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 
-#food-holder{
+#food-holder {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 20px;
 }
 
-.price{
-    text-align: end;
+.price {
+    text-align: end !important
 }
 
-#cart-holder{
+#cart-holder {
     background-color: #302f2f;
 }
 
-#cart-holder li{
+#cart-holder li {
     display: flex;
     margin-bottom: 2px;
     border-bottom: 2px solid tomato;
 }
 
-#cart-holder button{
-    color: black!important;
+#cart-holder button {
+    color: black !important;
 }
 
-#cart-holder input{
-    color: black!important;
+#cart-holder input {
+    color: black !important;
     width: 30px;
 }
 
-#cart{
+#cart {
     background-color: #302f2f;
     border: 2px solid tomato;
     border-radius: 20px;
     margin-top: 20px;
 }
 
-@media (min-width:1025px){
+@media (min-width:1025px) {
 
-    header{
+    header {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    nav{
-       margin-top: 18px;
+    nav {
+        margin-top: 18px;
     }
 
-    .brand{
+    .brand {
         display: flex;
-     align-items: center;
+        align-items: center;
     }
 
-    .brand h1{
-       display: block;
-       margin-left: 15px;
+    .brand h1 {
+        display: block;
+        margin-left: 15px;
     }
 
-    .brand img{
-       display: none;
+    .brand img {
+        display: none;
     }
 
 
-    header button{
-       display: none !important;
+    header button {
+        display: none !important;
     }
-    
+
 
     .nav_1 {
         text-decoration: none;
         margin-top: 0px;
         align-items: center;
         background-color: #302f2f;
-        width:100%;
+        width: 100%;
         top: auto;
         position: static;
-        margin: 0px;  
+        margin: 0px;
     }
-    
-    
-    .nav_menu{
+
+
+    .nav_menu {
         display: flex;
         border-bottom: 0px solid black;
     }
-     
-    header li{
+
+    header li {
         border-bottom: none;
     }
-  
 
-    header li:hover{
-        background-color: rgb(151, 31, 10)    ;
+
+    header li:hover {
+        background-color: rgb(151, 31, 10);
+        cursor: pointer;
     }
 
-    .active{
+    .active {
         background-color: tomato;
         display: block;
         text-align: center;
     }
 
-     /* FOOTER */
+    /* FOOTER */
 
-    footer p{
-         display: block;
+    footer p {
+        display: block;
     }
 
-     /* PESTAÑA INICIO */
+    /* PESTAÑA INICIO */
 
-    #inicio{
-       background-position: 50% 50%;
+    #inicio {
+        background-position: 50% 50%;
     }
-     
-    #inicio article{
+
+    #inicio article {
         position: absolute;
         top: 0;
         background: rgba(0, 0, 0, 0.5);
@@ -498,80 +500,80 @@ footer a{
 
     /* PESTAÑA NOSOTROS */
 
-    #about article{
+    #about article {
         width: 100%;
         height: 100%;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
     }
 
-    .info-cel{
+    .info-cel {
         display: none;
     }
 
-    #photo-cel{
+    #photo-cel {
         display: none;
     }
 
-    .info-pc{
+    .info-pc {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
 
-    .info-pc img{
+    .info-pc img {
         width: 500px;
         border-radius: 20px;
         margin: 50px 0px 0px 40px;
     }
 
-   
+
 
     /* PESTAÑA UBICACION */
 
-    #cel-map{
+    #cel-map {
         display: none;
     }
 
-    #pc-map{
+    #pc-map {
         display: block;
     }
 
-    #ubication article{
+    #ubication article {
         display: flex;
         flex-direction: column;
     }
 
     /* PESTAÑA CONTACTO */
 
-    #contact input{
+    #contact input {
         width: 40vw;
         margin-bottom: 10px;
     }
-    
-    #contact textarea{
-        color: black!important;
+
+    #contact textarea {
+        color: black !important;
         width: 700px;
     }
-    
-    #in-contact{
+
+    #in-contact {
         display: grid;
         gap: 70px;
     }
-    
-    #contact button{
+
+    #contact button {
         width: 30vw;
         height: 50px;
-        background-color:#302f2f;
+        background-color: #302f2f;
     }
 
-    #in-contact{
+    #in-contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 50px;
     }
 
-    #email{
+    #email {
         width: 180px;
     }
 

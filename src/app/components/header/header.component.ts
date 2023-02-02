@@ -7,16 +7,4 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  activePage: string = "index";
-
-  constructor(){
-
-  }
-
-  onChange(page:string) {
-    this.activePage = page
-    console.log(this.activePage);
-  }
-
-
 }
