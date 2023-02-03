@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders } from './app.routing';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -13,6 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ProductBoxComponent } from './components/product-box/product-box.component';
+import { DataServices } from './data.services';
 
 @NgModule({
   declarations: [
@@ -30,9 +32,10 @@ import { ProductBoxComponent } from './components/product-box/product-box.compon
   imports: [
     BrowserModule,
     routing,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [appRoutingProviders],
+  providers: [appRoutingProviders, DataServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
