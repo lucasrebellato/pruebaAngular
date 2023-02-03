@@ -14,7 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ProductBoxComponent } from './components/product-box/product-box.component';
-import { DataServices } from './data.services';
+
 
 @NgModule({
   declarations: [
@@ -32,10 +32,9 @@ import { DataServices } from './data.services';
   imports: [
     BrowserModule,
     routing,
-    FormsModule,
-    HttpClientModule
+    FormsModule
   ],
-  providers: [appRoutingProviders, DataServices],
+  providers: [appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
