@@ -14,6 +14,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ErrorComponent } from './components/error/error.component';
 import { ProductBoxComponent } from './components/product-box/product-box.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { HeaderLoginComponent } from './components/header-login/header-login.component';
 
 
 @NgModule({
@@ -27,12 +31,15 @@ import { ProductBoxComponent } from './components/product-box/product-box.compon
     ContactComponent,
     ProductsComponent,
     ErrorComponent,
-    ProductBoxComponent
+    ProductBoxComponent,
+    HeaderLoginComponent
   ],
   imports: [
     BrowserModule,
     routing,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore())
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

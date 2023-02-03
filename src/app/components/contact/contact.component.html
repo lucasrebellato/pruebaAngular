@@ -25,7 +25,7 @@
                 <p *ngIf="!surname.valid && surname.touched"><b class="error">Verifique su apellido</b></p>
 
 
-                <input type="text" name="email" id="email" placeholder="Correo electronico" #email="ngModel"
+                <input type="email" name="email" id="email" placeholder="Correo electronico" #email="ngModel"
                     [(ngModel)]="userMessage.email" required pattern={{regExEmail}}>
             
                 <p *ngIf="!email.valid && email.touched"><b class="error">Verifique su email</b></p>

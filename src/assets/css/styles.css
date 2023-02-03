@@ -317,6 +317,7 @@ footer a {
 
 #about img {
     margin-top: 20px;
+    width: 45vw;
 }
 
 .info-pc {
@@ -346,9 +347,10 @@ footer a {
     margin: 15;
     width: 150px;
     padding: 5px;
-    background-color: #f2f2f2;
+    background-color: #ccbdbd;
     border-radius: 15px;
     min-height: 250px;
+    border: black solid 2px;
 }
 
 .product-conteiner h3 {
@@ -536,7 +538,9 @@ footer a {
     }
 
     #pc-map {
-        display: block;
+        display:flex;
+        margin-left: 30vw;
+        margin-top: 10vh;
     }
 
     #ubication article {

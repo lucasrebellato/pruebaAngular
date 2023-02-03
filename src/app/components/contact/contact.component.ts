@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ProductsService } from 'src/app/services/products.service';
+import { userMessage } from 'src/app/models/userMessage';
 
 @Component({
   selector: 'app-contact',
@@ -7,11 +9,11 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
-  public userMessage: any;
-  regExName : string = "[a-zA-Z]+";
-  regExEmail : string = "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$";
+  public userMessage: userMessage;
+  regExName : RegExp = /[a-zA-Z]+/;
+  regExEmail : RegExp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
-  constructor(){
+  constructor(private ProductServices: ProductsService){
     
     this.userMessage = {
       name:'',
@@ -22,8 +24,9 @@ export class ContactComponent {
 
   }
 
-  onSubmit(){
-    alert("Formulario enviado correctamente");
+  async onSubmit(){
+    const response = await this.ProductServices.addUserComment(this.userMessage);
+    alert("Se han enviado sus comentarios, gracias!")
   }
 
 }
