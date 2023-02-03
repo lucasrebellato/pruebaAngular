@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders } from './app.routing';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -11,6 +12,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ErrorComponent } from './components/error/error.component';
+import { ProductBoxComponent } from './components/product-box/product-box.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { ErrorComponent } from './components/error/error.component';
     AboutComponent,
     ContactComponent,
     ProductsComponent,
-    ErrorComponent
+    ErrorComponent,
+    ProductBoxComponent
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FormsModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

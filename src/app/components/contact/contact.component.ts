@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  public userMessage: any;
+  regExName : string = "[a-zA-Z]+";
+  regExEmail : string = "^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$";
+
+  constructor(){
+    
+    this.userMessage = {
+      name:'',
+      surname:'',
+      email:'',
+      message:''
+    };
+
+  }
+
+  onSubmit(){
+    alert("Formulario enviado correctamente");
+  }
+
 }

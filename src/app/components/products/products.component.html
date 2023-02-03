@@ -4,33 +4,12 @@
 
         <h1>Nuestros cafes</h1>
 
-        <div id="productHolder">
-            <div *ngFor="let product of products">
-
-                <div *ngIf="product.type=='coffee'" class="product-conteiner">
-                    <h3>{{product.name}}</h3>
-                    <img src={{product.image}} alt={{product.name}}>
-                    <h3 class="price">${{product.price}}</h3>
-                    <button>Añadir</button>
-                </div>
-
-            </div>
-        </div>
+        <app-product-box [items]="coffees"></app-product-box>
 
         <h1>Nuestros postres</h1>
 
-        <div id="productHolder">
-            <div *ngFor="let product of products">
+        <app-product-box [items]="desserts"></app-product-box>
 
-                <div *ngIf="product.type=='dessert'" class="product-conteiner">
-                    <h3>{{product.name}}</h3>
-                    <img src={{product.image}} alt={{product.name}}>
-                    <h3 class="price">${{product.price}}</h3>
-                    <button>Añadir</button>
-                </div>
-    
-                </div>
-        </div>
 
         <div id="cart">
 
@@ -47,7 +26,5 @@
     <ng-template #noProducts>
         <h1 class="error">Ha ocurrido un error al cargar productos</h1>
     </ng-template>
-
-
 
 </main>

@@ -1,4 +1,3 @@
-import { TemplateBindingParseResult } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/models/product';
 
@@ -11,6 +10,9 @@ import { Product } from 'src/app/models/product';
 export class ProductsComponent implements OnInit {
 
   public products: Array<Product>;
+  coffees : Array<Product> = [];
+  desserts : Array<Product> = [];
+  prueba : string = "llegue";
 
   constructor() {
   this.products = [
@@ -23,7 +25,14 @@ export class ProductsComponent implements OnInit {
    ]
   }
   ngOnInit(){
-    console.log(this.products);
+    
+    this.products.forEach(product => {
+
+      if(product.type=="dessert") this.desserts.push(product);
+      else this.coffees.push(product);
+
+    })
+
   }
 
 

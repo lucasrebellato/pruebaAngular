@@ -335,7 +335,7 @@ footer a {
     text-align: center;
 }
 
-#coffee-holder {
+#product-holder {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
