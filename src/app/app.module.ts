@@ -18,6 +18,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { HeaderLoginComponent } from './components/header-login/header-login.component';
+import { provideAuth,getAuth } from '@angular/fire/auth';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { HeaderLoginComponent } from './components/header-login/header-login.com
     routing,
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    provideAuth(() => getAuth())
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

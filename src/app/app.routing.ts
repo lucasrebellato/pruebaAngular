@@ -17,7 +17,7 @@ import { ErrorComponent } from "./components/error/error.component";
 // array de rutas
 
 const appRoutes: Routes = [
-    { path: '', component: IndexComponent },
+    { path: '', pathMatch:'full', redirectTo:'home' },
     { path: 'products', component: ProductsComponent },
     { path: 'ubication', component: UbicationComponent },
     { path: 'about', component: AboutComponent },
