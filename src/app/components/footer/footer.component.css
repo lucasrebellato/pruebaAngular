@@ -1,0 +1,42 @@
+
+footer {
+    height: 10vh;
+    background-color: #302f2f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 2px tomato;
+}
+
+footer p {
+    text-align: center;
+    display: none;
+}
+
+.social-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+.social-networks a {
+    width: 20px;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+footer a {
+    text-align: center;
+}
+
+.fa {
+    font-size: 30px;
+}
+
+@media (min-width:1025px) {
+    
+    footer p {
+        display: block;
+    }
+}

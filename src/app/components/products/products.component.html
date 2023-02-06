@@ -4,22 +4,16 @@
 
         <h1>Nuestros cafes</h1>
 
-        <app-product-box [items]="coffees"></app-product-box>
+        <app-product-box [items]="coffees" [cart]="cart"></app-product-box>
 
         <h1>Nuestros postres</h1>
 
-        <app-product-box [items]="desserts"></app-product-box>
+        <app-product-box [items]="desserts" [cart]="cart"></app-product-box>
 
 
-        <div id="cart">
+        <app-cart-box [cart]="cart"></app-cart-box>
 
-            <h1>Carrito</h1>
-
-            <ul id="cart-holder"></ul>
-
-            <p>Total $<span id="total-holder">0</span></p>
-
-        </div>
+        
 
     </div>
 

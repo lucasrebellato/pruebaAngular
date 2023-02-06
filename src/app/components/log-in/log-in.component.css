@@ -1,0 +1,70 @@
+
+#login-conteiner{
+
+    background-image: url(../../../assets/images/fondo-black.jpg);
+    background-color:rgba(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#login-conteiner a:first-child{
+    color: white;
+    font-size: 50px;
+    text-align: left;
+}
+
+
+#login-conteiner h1{
+    text-align: center;
+}
+
+
+#login-conteiner h3{
+    text-align: center;
+}
+
+#login-conteiner form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#login-conteiner input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+#login-conteiner button{
+    background-color: tomato;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+#login-conteiner a{
+    color: white;
+    text-align: end;
+}
+
+
+
+@media (min-width:1025px){
+
+    #login-conteiner form{  
+        padding-right: 40vh; 
+        padding-left: 40vh;
+    }
+
+}

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ProductsService } from 'src/app/services/products.service';
 import { userMessage } from 'src/app/models/userMessage';
+import { userService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +13,7 @@ export class ContactComponent {
   regExName : RegExp = /[a-zA-Z]+/;
   regExEmail : RegExp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
-  constructor(private ProductServices: ProductsService){
+  constructor(private userService: userService){
     
     this.userMessage = {
       name:'',
@@ -25,7 +25,7 @@ export class ContactComponent {
   }
 
   async onSubmit(){
-    const response = await this.ProductServices.addUserComment(this.userMessage);
+    const response = await this.userService.addUserComment(this.userMessage);
     alert("Se han enviado sus comentarios, gracias!")
   }
 

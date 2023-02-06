@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders } from './app.routing';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -19,6 +18,9 @@ import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { HeaderLoginComponent } from './components/header-login/header-login.component';
 import { provideAuth,getAuth } from '@angular/fire/auth';
+import { CartBoxComponent } from './components/cart-box/cart-box.component';
+import { LogInComponent } from './components/log-in/log-in.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 
 @NgModule({
@@ -33,7 +35,10 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
     ProductsComponent,
     ErrorComponent,
     ProductBoxComponent,
-    HeaderLoginComponent
+    HeaderLoginComponent,
+    CartBoxComponent,
+    LogInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

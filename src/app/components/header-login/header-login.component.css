@@ -1,3 +1,20 @@
-.log:hover{
+.log:hover {
     color: tomato;
+}
+
+.pre-header {
+    border-bottom: 2px solid tomato;
+    height: 5vh;
+    background-color: #302f2f;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.log {
+    grid-column: 3;
+    text-align: end;
+
 }

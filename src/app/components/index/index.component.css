@@ -1,0 +1,40 @@
+
+#inicio {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../../../assets/images/productos/cafeteria.jpg);
+    background-position: 75% 50%;
+    background-size: cover;
+}
+
+#inicio article {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+#inicio h1 {
+    text-align: center;
+}
+
+@media (min-width:1025px) {
+       
+    #inicio {
+        background-position: 50% 50%;
+    }
+
+    #inicio article {
+        position: absolute;
+        top: 0;
+        background: rgba(0, 0, 0, 0.5);
+        width: 50%;
+        height: 100%;
+        padding: 15px;
+        background-position: none;
+    }
+  
+}

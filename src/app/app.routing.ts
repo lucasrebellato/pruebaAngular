@@ -12,6 +12,7 @@ import { ContactComponent } from "./components/contact/contact.component";
 import { AboutComponent } from "./components/about/about.component";
 import { UbicationComponent } from "./components/ubication/ubication.component";
 import { ErrorComponent } from "./components/error/error.component";
+import { LogInComponent } from "./components/log-in/log-in.component";
 
 
 // array de rutas
@@ -23,6 +24,7 @@ const appRoutes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'home', component: IndexComponent },
     { path: 'contact', component: ContactComponent },
+    { path: 'signIn', component: LogInComponent },
     { path: '**', component: ErrorComponent}
 ];
 
