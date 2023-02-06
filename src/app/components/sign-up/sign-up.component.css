@@ -1,0 +1,60 @@
+#signup-conteiner {
+    background-image: url(../../../assets/images/fondo-black.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#signup-conteiner a:first-child {
+    color: white;
+    font-size: 50px;
+    text-align: left;
+}
+
+
+#signup-conteiner h1 {
+    text-align: center;
+}
+
+#signup-conteiner form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#signup-conteiner input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+#signup-conteiner button {
+    background-color: tomato;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+#signup-conteiner a {
+    color: white;
+    text-align: end;
+}
+
+@media (min-width:1025px) {
+
+    #signup-conteiner {
+        padding-left: 40vh;
+        padding-right: 40vh;
+    }
+
+}

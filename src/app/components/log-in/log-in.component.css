@@ -1,8 +1,6 @@
-
 #login-conteiner{
 
     background-image: url(../../../assets/images/fondo-black.jpg);
-    background-color:rgba(0, 0, 0);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -63,6 +61,7 @@
 @media (min-width:1025px){
 
     #login-conteiner form{  
+        background-color: (0,0,0);
         padding-right: 40vh; 
         padding-left: 40vh;
     }

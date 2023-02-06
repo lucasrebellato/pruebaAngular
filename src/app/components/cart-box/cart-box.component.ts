@@ -37,11 +37,10 @@ export class CartBoxComponent implements OnInit {
 
     this.cart[this.indexOfItem].quantity--;
     
-    this.cart[this.indexOfItem].quantity-- <= 0 ? this.cart.splice(this.indexOfItem,1) : "";
+    this.cart[this.indexOfItem].quantity <= 0 ? this.cart.splice(this.indexOfItem,1) : "";
 
   }
 
-  
 
 
 

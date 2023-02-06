@@ -15,13 +15,9 @@ export class ProductsComponent implements OnInit {
   coffees: Product[] = [];
   desserts: Product[] = [];
   cart: Cart[] = [];
-  // isInCart: Boolean = false;
-  // itemOfCart = Cart;
-  // indexOfItem: number = 0;
 
   constructor(private productsService: ProductsService) {
   }
-
 
   ngOnInit() {
 
@@ -33,22 +29,6 @@ export class ProductsComponent implements OnInit {
     })
 
   }
-
-  // addToCart(item: Product) {
-
-  //   this.cart.forEach(itemInCart => {
-
-  //     if (itemInCart.product.id == item.id) {
-  //       this.isInCart = true;
-  //       this.indexOfItem = this.cart.indexOf(itemInCart);
-  //     }
-  //   })
-
-  //     this.isInCart ? this.cart[this.indexOfItem].quantity++ : this.cart.push(new Cart(item));
-    
-  //   }
-
-
 
 
 }

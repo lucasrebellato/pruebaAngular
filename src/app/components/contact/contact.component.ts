@@ -26,7 +26,7 @@ export class ContactComponent {
 
   async onSubmit(){
     const response = await this.userService.addUserComment(this.userMessage);
-    alert("Se han enviado sus comentarios, gracias!")
+    alert("Se han enviado sus comentarios, gracias!");
   }
 
 }

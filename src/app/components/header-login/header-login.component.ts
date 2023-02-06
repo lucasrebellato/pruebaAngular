@@ -1,10 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { userService } from 'src/app/services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header-login',
   templateUrl: './header-login.component.html',
   styleUrls: ['./header-login.component.css']
 })
-export class HeaderLoginComponent {
+export class HeaderLoginComponent implements OnInit {
+ 
+  
+  constructor(private userService: userService, private router : Router){}
+
+  values : string = ''
+
+
+  ngOnInit(): void {
+    const possible : string |null = localStorage.getItem("emailForSignIn")
+    if(!possible) return
+    this.values = possible;
+    console.log(this.values);
+  }
+
+  onClick(){
+    this.userService.logout()
+    .then(()=>{
+      this.router.navigate(['/logIn']);
+      this.values = ' ';
+    })
+    .catch(error => console.log(error));
+  }
+  
+ 
 
 }

@@ -1,1 +1,24 @@
-<p>sign-up works!</p>
+<div id="signup-conteiner">
+   
+    <h1>Crear cuenta</h1>
+    
+    <form action="">
+        
+        <h3>Correo electronico</h3>
+        <input type="email" style="color:black" name="email" id="email" placeholder="Correo electronico" #email="ngModel"
+                    [(ngModel)]="newUser.email" required>
+            
+        <p *ngIf="!email.valid && email.touched"><b class="error">Verifique su email</b></p>
+
+        <h3>Contraseña</h3>
+        <input type="password" style="color:black" name="password" id="signup-password" placeholder="Contraseña" #password="ngModel"
+        [(ngModel)]="newUser.password" required >
+        
+        <p *ngIf="!password.valid && password.touched"><b class="error">Verifique su email</b></p>
+
+        <button type="button" (click)="onSubmit()">Crear</button> 
+        
+    </form>
+    
+
+</div>
