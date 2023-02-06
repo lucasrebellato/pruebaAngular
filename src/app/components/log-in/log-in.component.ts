@@ -24,9 +24,9 @@ export class LogInComponent {
     this.userService.login(this.logInUser)
       .then(
         response => {
-          alert("Has ingresado correctamente");
+          this.router.navigate(['/home']);
           window.localStorage.setItem('emailForSignIn', JSON.stringify(response.user.email));
-          console.log(JSON.stringify(response.user.email));
+          window.location.reload()
         }
       )
       .catch(
@@ -39,9 +39,9 @@ export class LogInComponent {
   onClick() {
     this.userService.loginWithGoogle()
       .then(response => {
-        this.router.navigate(['/home']);
         window.localStorage.setItem('emailForSignIn', JSON.stringify(response.user.email));
-        console.log(response, this.logInUser);
+        window.location.reload()
+        this.router.navigate(['/home']);
 
       })
       .catch(error => console.log(error))

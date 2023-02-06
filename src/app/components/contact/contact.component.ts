@@ -11,7 +11,7 @@ export class ContactComponent {
 
   public userMessage: userMessage;
   regExName : RegExp = /[a-zA-Z]+/;
-  regExEmail : RegExp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  // regExEmail : RegExp = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
   constructor(private userService: userService){
     

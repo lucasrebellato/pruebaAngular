@@ -1,5 +1,15 @@
-<div class="pre-header">
+
+
+<div *ngIf="values.length < 3" class="pre-header">
         
     <a class="log" [routerLink]="['/signIn']">Iniciar sesión</a>
 
 </div>
+
+<div *ngIf="values.length > 3" class="pre-header">
+        
+    <p>Hola {{values}}, bienvenido.</p>
+    <a class="log" (click)="logOut()">Cerrar sesión</a>
+
+</div>
+
