@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Cart } from 'src/app/models/cart';
 import { Product } from 'src/app/models/product';
 
@@ -12,6 +12,7 @@ export class ProductBoxComponent {
 
   @Input() items: Product[] = [];
   @Input() cart: Cart[] = [];
+  @Input() total : number = 0;
 
   constructor() {
   }
@@ -20,7 +21,8 @@ export class ProductBoxComponent {
  
     let itemExists = this.cart.find(x => x.product.id === item.id);
     itemExists ? itemExists.quantity++ : this.cart.push(new Cart(item));
-
+    this.total+=item.price;
+    
   }
 
 

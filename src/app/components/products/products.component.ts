@@ -15,6 +15,7 @@ export class ProductsComponent implements OnInit {
   coffees: Product[] = [];
   desserts: Product[] = [];
   cart: Cart[] = [];
+  total : number = 0;
 
   constructor(private productsService: ProductsService) {
   }

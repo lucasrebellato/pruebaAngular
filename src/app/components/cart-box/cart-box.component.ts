@@ -7,23 +7,20 @@ import { Product } from 'src/app/models/product';
   templateUrl: './cart-box.component.html',
   styleUrls: ['./cart-box.component.css']
 })
-export class CartBoxComponent implements OnInit {
+export class CartBoxComponent implements OnChanges {
 
   @Input() cart: Cart[] = [];
-  total: number = 0;
+  @Input() total: number = 0;
   itemOfCart = Cart;
   indexOfItem: number = 0;
 
   constructor() {
   }
   
-  ngOnInit(): void {
-    console.log(this.cart);
+  ngOnChanges(changes : SimpleChanges): void {
+    console.log(changes)
     
-    this.cart.forEach(item => {
-      this.total += item.quantity * item.price;
-    })
-
+    
 
   }
 
@@ -38,6 +35,8 @@ export class CartBoxComponent implements OnInit {
     this.cart[this.indexOfItem].quantity--;
     
     this.cart[this.indexOfItem].quantity <= 0 ? this.cart.splice(this.indexOfItem,1) : "";
+
+    this.total-=this.cart[this.indexOfItem].price;
 
   }
 
