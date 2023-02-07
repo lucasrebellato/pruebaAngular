@@ -22,6 +22,7 @@ export class ProductBoxComponent {
     let itemExists = this.cart.find(x => x.product.id === item.id);
     itemExists ? itemExists.quantity++ : this.cart.push(new Cart(item));
     this.total+=item.price;
+    console.log(this.total)
     
   }
 

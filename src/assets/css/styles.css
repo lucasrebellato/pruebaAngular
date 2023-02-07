@@ -89,34 +89,7 @@ p {
     text-align: end !important
 }
 
-#cart-holder {
-    background-color: #302f2f;
-    
-}
 
-#cart-holder li {
-    display: flex;
-    margin-bottom: 2px;
-    border-bottom: 2px solid tomato;
-    height: 5vh;
-}
-
-#cart-holder button {
-    color: black !important;
-}
-
-#cart-holder input {
-    color: black !important;
-    width: 30px;
-}
-
-#cart {
-    background-color: #302f2f;
-    border: 2px solid tomato;
-    border-radius: 20px;
-    margin-top: 20px;
-    height: 50vh;
-}
 
 @media (min-width:1025px) {
 

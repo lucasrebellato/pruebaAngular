@@ -36,8 +36,6 @@ export class CartBoxComponent implements OnChanges {
     
     this.cart[this.indexOfItem].quantity <= 0 ? this.cart.splice(this.indexOfItem,1) : "";
 
-    this.total-=this.cart[this.indexOfItem].price;
-
   }
 
 

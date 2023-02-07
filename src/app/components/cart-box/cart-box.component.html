@@ -3,17 +3,25 @@
     <h1>Carrito</h1>
 
     <ul id="cart-holder">
+        <li *ngIf="cart.length > 0">
+            <h3>Producto</h3>
+            <h3>Cantidad</h3>
+            <h3>Precio</h3>
+            <h3>Eliminar</h3>
+        </li>
+
          <li *ngFor="let item of cart">
-            <p>{{item.product.name}}</p>
-            <input id="quantity" value="{{item.quantity}}"/>
-            <p type="number" id="price">${{item.product.price * item.quantity}}</p>
-            <button (click)="outOfCart(item.product)">Eliminar</button>
+            <h3>{{item.product.name}}</h3>
+            <!-- <input id="quantity" value="{{item.quantity}}"/> -->
+            <h3>{{item.quantity}}</h3>
+            <h3 type="number" id="price">${{item.product.price * item.quantity}}</h3>
+            <h3 class="deleteItem"  (click)="outOfCart(item.product)">Eliminar uno</h3>
         </li> 
     </ul>
  
-    <p>Total $<span id="total-holder">{{total}}</span></p> 
+    <h2 id="total-holder">Total ${{total}}</h2> 
 
-    <button *ngIf="cart.length > 0" style="color:black"> Terminar compra</button>
+    <button *ngIf="cart.length > 0" style="color:black">Terminar compra</button>
  
 
 

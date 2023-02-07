@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, signInWithPopup, GoogleAuthProvider, User } from "@angular/fire/auth";
+import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, signInWithPopup, GoogleAuthProvider, User, UserCredential } from "@angular/fire/auth";
 import { userMessage } from "../models/userMessage";
 import { user } from "../models/user";
 import { collectionData, Firestore, addDoc, collection } from '@angular/fire/firestore';
@@ -12,7 +12,7 @@ export class userService {
 
     constructor(private auth: Auth, private firestore: Firestore) { }
 
-    register(user: user) {
+    async register(user: user) : Promise<UserCredential>{
         return createUserWithEmailAndPassword(this.auth, user.email, user.password);
     }
 
